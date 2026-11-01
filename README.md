@@ -15,3 +15,14 @@ what works for me.
 ## Why these
 
 _TODO: fill in as I figure out how I want to write code._
+
+## Install
+
+Symlink each skill into the global skills folder, so every project sees them and a
+`git pull` keeps them current:
+
+```bash
+for n in grill-with-docs grilling domain-modeling; do
+  ln -s "$PWD/skills/$n" ~/.claude/skills/$n
+done
+```
