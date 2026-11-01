@@ -2,7 +2,8 @@
 
 My personal setup for working with coding agents. Started from
 [mattpocock/skills](https://github.com/mattpocock/skills); I'm adapting it as I learn
-what works for me.
+what works for me. The skills are used under the MIT license, see
+[THIRD-PARTY-LICENSES.md](./THIRD-PARTY-LICENSES.md).
 
 ## Skills
 
