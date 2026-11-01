@@ -8,6 +8,9 @@ A running log: what I tried, what went wrong, what I changed and why.
   went looking for my em-dash rule and found it lived in this repo's CLAUDE.md, which
   Claude only loads here. `~/.claude/CLAUDE.md` was empty. Fix: added `global/CLAUDE.md`,
   symlinked to `~/.claude/CLAUDE.md`, and moved the em-dash rule there in general form.
+- **Failure: had to ask for atomic commits by hand.** In the flaggy session I had to tell
+  Claude to make atomic commits, each a thin slice of value, because nothing in the harness
+  said so. Fix: added the rule to `global/CLAUDE.md`.
 
 ## Decisions
 - **Interview style: kept as-is.** `grilling` asks every ready question in one numbered
