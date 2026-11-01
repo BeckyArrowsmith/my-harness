@@ -27,3 +27,9 @@ for n in grill-with-docs grilling domain-modeling; do
   ln -s "$PWD/skills/$n" ~/.claude/skills/$n
 done
 ```
+
+Symlink the global rules too, so they apply in every project, not just this repo:
+
+```bash
+ln -sf "$PWD/global/CLAUDE.md" ~/.claude/CLAUDE.md
+```

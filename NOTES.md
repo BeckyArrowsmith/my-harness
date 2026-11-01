@@ -4,6 +4,10 @@ A running log: what I tried, what went wrong, what I changed and why.
 
 ## 2026-11-01
 - Started harness repo. Copied grill-with-docs, grilling, domain-modeling from Matt Pocock's skills repo.
+- **Failure: the em-dash rule only applied inside this repo.** While designing flaggy, I
+  went looking for my em-dash rule and found it lived in this repo's CLAUDE.md, which
+  Claude only loads here. `~/.claude/CLAUDE.md` was empty. Fix: added `global/CLAUDE.md`,
+  symlinked to `~/.claude/CLAUDE.md`, and moved the em-dash rule there in general form.
 
 ## Decisions
 - **Interview style: kept as-is.** `grilling` asks every ready question in one numbered
