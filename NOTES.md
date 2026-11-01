@@ -9,3 +9,7 @@ A running log: what I tried, what went wrong, what I changed and why.
 - **Interview style: kept as-is.** `grilling` asks every ready question in one numbered
   batch, each with a recommended answer, rather than one question at a time. I prefer
   being able to say "yes" to a lot at once and spend effort only where I disagree.
+- **Adopted Matt's "observed failure" bar** (from his SCOPE.md). Nothing gets added or
+  changed unless it fixes something that went wrong in a real session. Keeps the harness
+  small and every piece explainable. Written into CLAUDE.md.
+- **No em-dashes** in repo prose, also taken from his CLAUDE.md. Purely a style choice.
