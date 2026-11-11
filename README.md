@@ -14,6 +14,7 @@ what works for me. The skills are used under the MIT license, see
 | `domain-modeling` | Maintains GLOSSARY.md and ADRs | from Matt, unmodified |
 | `handoff` | Compacts a conversation into a document for another agent to continue | from Matt, unmodified |
 | `retro` | Suggests improvements to the agent's environment after a session | from Matt, unmodified |
+| `tdd` | Prompts and enforces test-driven development during builds | from Matt, unmodified |
 
 ## Why these
 
@@ -25,7 +26,7 @@ Symlink each skill into the global skills folder, so every project sees them and
 `git pull` keeps them current:
 
 ```bash
-for n in grill-with-docs grilling domain-modeling handoff retro; do
+for n in grill-with-docs grilling domain-modeling handoff retro tdd; do
   ln -s "$PWD/skills/$n" ~/.claude/skills/$n
 done
 ```

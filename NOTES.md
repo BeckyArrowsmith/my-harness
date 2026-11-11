@@ -35,6 +35,10 @@ A running log: what I tried, what went wrong, what I changed and why.
   which skills would have helped. The review surfaced real improvements (the grill-with-docs
   fix, handoff) but the process was unstructured and not repeatable.
   Fix: pulled the `retro` skill from mattpocock/skills as an unmodified baseline.
+- **Failure: CastVault slice 1 shipped with zero tests.** The entire scan-review-export
+  flow has no test coverage. No skill in the harness prompted or enforced writing tests
+  during the build.
+  Fix: pulled the `tdd` skill from mattpocock/skills as an unmodified baseline.
 - **Exception to the bar: a code readability rule with no failure behind it.** Added a
   "Code" section to `global/CLAUDE.md` built on the book's three symptoms of complexity:
   cognitive load, change amplification, and unknown unknowns. Nothing
