@@ -19,6 +19,12 @@ A running log: what I tried, what went wrong, what I changed and why.
   into flaggy's own CLAUDE.md, which will drift. Fix: documented a cloud environment setup
   script in the README that clones this repo and links `global/CLAUDE.md` into place, the
   same way the local symlink does. Once it's confirmed working, flaggy's copy can go.
+- **Exception to the bar: a code readability rule with no failure behind it.** Added a
+  "Code" section to `global/CLAUDE.md` built on the book's three symptoms of complexity:
+  cognitive load, change amplification, and unknown unknowns. Nothing
+  had gone wrong yet. I added it anyway because it's the foundation for all the code I'll
+  write with Claude, and waiting for the first failure means paying exactly the cognitive
+  load the rule exists to prevent. Prompted by rereading *A Philosophy of Software Design*.
 
 ## Decisions
 - **Interview style: kept as-is.** `grilling` asks every ready question in one numbered
