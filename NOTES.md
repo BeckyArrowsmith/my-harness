@@ -19,6 +19,13 @@ A running log: what I tried, what went wrong, what I changed and why.
   into flaggy's own CLAUDE.md, which will drift. Fix: documented a cloud environment setup
   script in the README that clones this repo and links `global/CLAUDE.md` into place, the
   same way the local symlink does. Once it's confirmed working, flaggy's copy can go.
+- **Failure: grill-with-docs settled decisions without writing docs.** During a
+  grill-with-docs session on the CastVault project, Claude ran 4 rounds of grilling and
+  settled design decisions without creating any docs. It only started writing SPEC.md after
+  being asked to. The skill's name promises docs, but nothing in `SKILL.md` told Claude to
+  write them as decisions were made.
+  Fix: added a rule to `skills/grill-with-docs/SKILL.md` requiring docs to be written
+  incrementally as decisions settle, not batched up after grilling.
 - **Exception to the bar: a code readability rule with no failure behind it.** Added a
   "Code" section to `global/CLAUDE.md` built on the book's three symptoms of complexity:
   cognitive load, change amplification, and unknown unknowns. Nothing
