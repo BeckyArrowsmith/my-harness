@@ -26,6 +26,15 @@ A running log: what I tried, what went wrong, what I changed and why.
   write them as decisions were made.
   Fix: added a rule to `skills/grill-with-docs/SKILL.md` requiring docs to be written
   incrementally as decisions settle, not batched up after grilling.
+- **Failure: no structured handoff between sessions.** After a long CastVault session
+  (design + build of slice 1), context was large and the next slice needed a fresh session.
+  SPEC.md and PROGRESS.md existed but nothing produced a handoff document scoped to what
+  the next agent actually needs.
+  Fix: pulled the `handoff` skill from mattpocock/skills as an unmodified baseline.
+- **Failure: retro was ad hoc.** End of the CastVault session, reviewed what went wrong and
+  which skills would have helped. The review surfaced real improvements (the grill-with-docs
+  fix, handoff) but the process was unstructured and not repeatable.
+  Fix: pulled the `retro` skill from mattpocock/skills as an unmodified baseline.
 - **Exception to the bar: a code readability rule with no failure behind it.** Added a
   "Code" section to `global/CLAUDE.md` built on the book's three symptoms of complexity:
   cognitive load, change amplification, and unknown unknowns. Nothing
