@@ -33,3 +33,23 @@ Symlink the global rules too, so they apply in every project, not just this repo
 ```bash
 ln -sf "$PWD/global/CLAUDE.md" ~/.claude/CLAUDE.md
 ```
+
+### Cloud sessions
+
+A cloud session starts on a fresh machine with only the project's repo, so it never sees
+`~/.claude/CLAUDE.md` from my laptop. To give it the global rules, add this as the setup
+script on my cloud environment (claude.ai, environment settings). It runs at the start of
+every cloud session and does what the symlink above does locally:
+
+```bash
+#!/bin/bash
+git clone --depth 1 https://github.com/BeckyArrowsmith/my-harness ~/my-harness
+mkdir -p ~/.claude
+ln -sf ~/my-harness/global/CLAUDE.md ~/.claude/CLAUDE.md
+```
+
+To check it worked, run `/context` in a cloud session and look for
+`/root/.claude/CLAUDE.md` under Memory files.
+
+The skills don't come along this way. Enable them on claude.ai instead, and cloud
+sessions load them automatically.

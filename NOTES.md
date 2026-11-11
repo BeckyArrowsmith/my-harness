@@ -12,6 +12,14 @@ A running log: what I tried, what went wrong, what I changed and why.
   Claude to make atomic commits, each a thin slice of value, because nothing in the harness
   said so. Fix: added the rule to `global/CLAUDE.md`.
 
+## 2026-11-11
+- **Failure: cloud sessions never saw my global rules.** Designing flaggy in a cloud
+  session, Claude missed rules from `global/CLAUDE.md`, because a cloud session only has
+  the project's repo and not my `~/.claude`. I worked around it by copying the key rules
+  into flaggy's own CLAUDE.md, which will drift. Fix: documented a cloud environment setup
+  script in the README that clones this repo and links `global/CLAUDE.md` into place, the
+  same way the local symlink does. Once it's confirmed working, flaggy's copy can go.
+
 ## Decisions
 - **Interview style: kept as-is.** `grilling` asks every ready question in one numbered
   batch, each with a recommended answer, rather than one question at a time. I prefer
